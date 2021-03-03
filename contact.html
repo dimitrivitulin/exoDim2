@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -14,9 +16,9 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#"></a>Catégorie</li>
-                <li><a href="#"></a>A Propos</li>
-                <li><a href="#"></a>Contact</li>
+                <li><a href="index.html">Catégorie</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="contact.html" id="menufocus">Contact</a></li>
             </ul>
         </nav>
 
@@ -39,78 +41,125 @@
                 <h3>Glace en bâton</h3>
             </div> -->
 
-        <ul class="accordeon">
-            <li class="sub-acc">
-                <label for="menu1">Crème glaçée</label>
-                <input id="menu1" type="checkbox" name="menu">
-                <div class="espace-menu"></div>
-            </li>
-            <li class="sub-acc">
-                <label for="menu2">Sorbet</label>
-                <input id="menu2" type="checkbox" name="menu">
-                <div class="espace-menu"></div>
-            </li>
-            <li class="sub-acc">
-                <label for="menu3">Yaoûrt glaçé</label>
-                <input id="menu3" type="checkbox" name="menu">
-                <div class="espace-menu"></div>
-            </li>
-            <li class="sub-acc">
-                <label for="menu4">Cornet</label>
-                <input id="menu4" type="checkbox" name="menu">
-                <div class="espace-menu"></div>
-            </li>
-            <li class="sub-acc">
-                <label for="menu5">Glace en bâton</label>
-                <input id="menu5" type="checkbox" name="menu">
-                <div class="espace-menu"></div>
-            </li>
-        </ul>      
+            <ul class="accordeon">
+                <li class="sub-acc">
+                    <label for="menu1">Crème glaçée</label>
+                    <input id="menu1" type="checkbox" name="menu">
+                    <div class="espace-menu"></div>
+                </li>
+                <li class="sub-acc">
+                    <label for="menu2">Sorbet</label>
+                    <input id="menu2" type="checkbox" name="menu">
+                    <div class="espace-menu"></div>
+                </li>
+                <li class="sub-acc">
+                    <label for="menu3">Yaoûrt glaçé</label>
+                    <input id="menu3" type="checkbox" name="menu">
+                    <div class="espace-menu"></div>
+                </li>
+                <li class="sub-acc">
+                    <label for="menu4">Cornet</label>
+                    <input id="menu4" type="checkbox" name="menu">
+                    <div class="espace-menu"></div>
+                </li>
+                <li class="sub-acc">
+                    <label for="menu5">Glace en bâton</label>
+                    <input id="menu5" type="checkbox" name="menu">
+                    <div class="espace-menu"></div>
+                </li>
+            </ul>
 
         </aside>
         <section class="corps-contact">
             <div class="infos">
-                <div class="coordonnees">
+                <div class="coord-map">
+                    <div class="coordonnees">
+                        <h2>Mon glacier préféré</h2>
+                        <div class="adress-tel">
+                            <address class="adress">
+                                <div class="Icon">
+                                    <div class="icon"><img src="img/adresse.svg" alt="" width="20px"></div>
+                                </div>
+                                <div class="text-address">
+                                    <p>Häagen-Dazs </p>
+                                    <p>11 Cours Georges Clemenceau,</p>
+                                    <p>33000 Bordeaux</p>
+                                </div>
+                            </address>
+                            <div class="telephone">
+                                <div class="Icon">
+                                    <div class="icon"><img src="img/telephone.svg" alt="" width="18px">
+                                    </div>
+                                </div>
 
+                                <div class="phone">
+                                    <p><span>Tel</span>:<a href="tel:+33557301672">05 57 30 16 72</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="map">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe width="400" height="250" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=H%C3%A4agen-Dazs%2011%20Cours%20Georges%20Clemenceau,%2033000%20Bordeaux&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                    href="https://yt2.org/de/youtube-to-mp3-ALeKk00qEW0sxByTDSpzaRvl8WxdMAeMytQ1611842368056QMMlSYKLwAsWUsAfLipqwCA2ahUKEwiikKDe5L7uAhVFCuwKHUuFBoYQ8tMDegUAQCSAQCYAQCqAQdnd3Mtd2l6"></a><br>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 250px;
+                                        width: 400px;
+                                    }
+                                </style>
+                                <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 250px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="map">
 
+                <div class="formulaire">
+                    <div class="titre-form">
+                        <h2>Formulaire de Contact</h2>
+                    </div>
+                    <form class="form">
+
+                        <div class="input-box">
+                            <input type="text" name="nom" required="required">
+                            <span>Nom</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="prenom" required="required">
+                            <span>Prenom</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" name="phone" required="required">
+                            <span>Téléphone</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea name="message" required="required" rows="5" maxlength="300"></textarea>
+                            <span>Votre Message</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" name="btn" value="Envoyer">
+                            <span></span>
+                        </div>
+
+
+                    </form>
                 </div>
-            </div>
-            <div class="formulaire">
-                <div class="titre-form">
-
-                </div>
-                <form class="form">
-                    <h2>Formulaire de Contact</h2>
-                    <div class="input-box">
-                        <input type="text" name="nom" required="required">
-                        <span>Nom</span>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="prenom" required="required" >
-                        <span>Prenom</span>
-                    </div>
-                    <div class="input-box">
-                        <input type="email" name="email" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="input-box">
-                        <input type="tel" name="phone" required="required" >
-                        <span>Téléphone</span>
-                    </div>
-                    <div class="input-box">
-                        <textarea name="message" required="required" rows="5"maxlength="300" ></textarea>
-                        <span>Votre Message</span>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" name="btn" value="Envoyer">
-                        <span></span>
-                    </div>
-
-
-                </form>
-            </div>
         </section>
     </main>
     <footer>
@@ -125,4 +174,5 @@
         </div>
     </footer>
 </body>
+
 </html>

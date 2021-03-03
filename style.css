@@ -52,9 +52,24 @@ header {
 
 .menu ul li a {
     padding-left: 3px;
-    border-left: 1px solid black;
+    border-left: 2px solid black;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: all ease;
 }
-
+.menu ul li a:hover,
+.menu ul li a:focus{
+    border-left: hidden;
+    border-bottom: 2px solid crimson;
+    transition: all ease ;
+}
+#menufocus{
+    border-left: hidden;
+    border-bottom: 2px solid crimson;
+    transition: all ease ;
+}
 
 
 /* SIDEBAR */
@@ -232,6 +247,7 @@ address p {
 .corps-contact{
     /* margin-top: 20vh; */
     width: 100%;
+    display: flex;
 }
 /* Formulaire de Contact */
 
@@ -244,17 +260,96 @@ address p {
 
 }
 
+/* coordonnées */
+.infos{
+    width: 100%;
+}
+.coord-map{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin:10% 0 10% 10%;
+}
+.coordonnees{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 60%;
+}
+.coordonnees h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.adress-tel{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.text-address{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+
+}
+
+.adress,.telephone{
+    line-height: 0.6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.phone a{
+    text-decoration: none;
+    color: black;
+}
+
+.phone p span {
+    font-weight: 500;
+}
+.Icon{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    background-color: wheat;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+.text-address{
+    width: 90%;
+}
+
+
 .form{
     width: 35vw;
     display:flex;
     flex-direction: column;
+    padding-top: 30px;
     background: wheat;
     border-radius: 2%;
     box-shadow: 1px 1px 15px rgba(170, 165, 165, 0.596)
 }
-.form h2{
+.titre-form h2{
     text-align: center;
-    padding: 20px 0;
+
     font-size: 28px;
 }
 
