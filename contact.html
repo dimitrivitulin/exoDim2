@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="img-logo" src="logo.png" alt="logo du site">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#"></a>Catégorie</li>
+                <li><a href="#"></a>A Propos</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main">
+        <aside>
+            <!-- <div class="categorie1">
+                <h3>Crème glacée</h3>
+            </div>
+            <div class="categorie">
+                <h3>Sorbet</h3>
+            </div>
+            <div class="categorie">
+                <h3>Yaourt glacée</h3>
+            </div>
+            <div class="categorie">
+                <h3>Cornets</h3>
+            </div>
+            <div class="categorie">
+                <h3>Glace en bâton</h3>
+            </div> -->
+
+        <ul class="accordeon">
+            <li class="sub-acc">
+                <label for="menu1">Crème glaçée</label>
+                <input id="menu1" type="checkbox" name="menu">
+                <div class="espace-menu"></div>
+            </li>
+            <li class="sub-acc">
+                <label for="menu2">Sorbet</label>
+                <input id="menu2" type="checkbox" name="menu">
+                <div class="espace-menu"></div>
+            </li>
+            <li class="sub-acc">
+                <label for="menu3">Yaoûrt glaçé</label>
+                <input id="menu3" type="checkbox" name="menu">
+                <div class="espace-menu"></div>
+            </li>
+            <li class="sub-acc">
+                <label for="menu4">Cornet</label>
+                <input id="menu4" type="checkbox" name="menu">
+                <div class="espace-menu"></div>
+            </li>
+            <li class="sub-acc">
+                <label for="menu5">Glace en bâton</label>
+                <input id="menu5" type="checkbox" name="menu">
+                <div class="espace-menu"></div>
+            </li>
+        </ul>      
+
+        </aside>
+        <section class="corps-contact">
+            <div class="infos">
+                <div class="coordonnees">
+
+                </div>
+                <div class="map">
+
+                </div>
+            </div>
+            <div class="formulaire">
+                <div class="titre-form">
+
+                </div>
+                <form class="form">
+                    <h2>Formulaire de Contact</h2>
+                    <div class="input-box">
+                        <input type="text" name="nom" required="required">
+                        <span>Nom</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="prenom" required="required" >
+                        <span>Prenom</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="phone" required="required" >
+                        <span>Téléphone</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" required="required" rows="5"maxlength="300" ></textarea>
+                        <span>Votre Message</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="btn" value="Envoyer">
+                        <span></span>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <h3>Le Paradis des glaces</h3>
+            <p>112 rue de la crème glacée <br>
+                99000 Gervais</p>
+        </address>
+        <div class="copyright">
+            <p>@Copyright</p>
+            <p>La Laitière</p>
+        </div>
+    </footer>
+</body>
+</html>
